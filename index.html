@@ -8,18 +8,7 @@
 </head>
 <body>
     <div class="cursor" id="cursor"></div>
-
-    <script>
-        const movingCircle = document.getElementById("cursor");   
-
-        function mouseCursor(e) {    
-            movingCircle.style.left = e.clientX + "px";
-            movingCircle.style.top = e.clientY + "px";
-            console.log(e.clientX); // Logs the X-coordinate of the mouse cursor
-        }
-      
-            document.body.addEventListener("mousemove", mouseCursor);   
-        console.log("circle is moving");
+    <script src="index.js">
     </script>
 </body>
 </html>
