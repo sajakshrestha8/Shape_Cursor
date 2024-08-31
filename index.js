@@ -7,11 +7,11 @@ const mouseCursor = (e) => {
 
 document.addEventListener("mousemove", mouseCursor);
 
-const changingColor = () => {
-  const color = ["red", "blue", "green"];
-  for (let i = 0; i <= color.length; i++) {
-    setInterval(() => {
-      movingCircle.style.backgroundColor = color[i];
-    }, 1000);
-  }
-};
+const color = ["red", "blue", "green"];
+let i = 0;
+setInterval(() => {
+  i = i % color.length;
+  console.log(i);
+  movingCircle.style.backgroundColor = color[i];
+  i++;
+}, 5000);
